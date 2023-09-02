@@ -1,0 +1,71 @@
+@import 'include-media';
+
+.typography {
+  transition: color 0.3s ease-in;
+}
+
+.secondary {
+  color: var(--text-secondary);
+}
+
+.accent {
+  color: var(--text-accent);
+  display: inline;
+}
+
+.typography--variant-h0 {
+  font-size: 24rem;
+  line-height: 105%;
+}
+
+.typography--variant-h1 {
+  font-size: 6rem;
+  line-height: 100%;
+
+  @include media('<desktop') {
+    font-size: 2.75rem;
+  }
+}
+
+.typography--variant-h2 {
+  font-size: 2.25rem;
+  line-height: 100%;
+
+  @include media('<desktop') {
+    font-size: 2rem;
+  }
+}
+
+.typography--variant-h3 {
+  font-size: 2rem;
+  line-height: 100%;
+
+  @include media('<desktop') {
+    font-size: 1.5rem;
+  }
+}
+
+.typography--variant-h4 {
+  font-size: 1.5rem;
+  line-height: 100%;
+}
+
+.typography--variant-body1 {
+  font-size: 1.5rem;
+  line-height: 130%;
+
+  @include media('<desktop') {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+.typography--variant-special1 {
+  font-size: 4rem;
+  line-height: 120%;
+}
+
+.typography--variant-VTH1 {
+  font-size: 6rem;
+  line-height: 105%;
+}

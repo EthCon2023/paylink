@@ -1,0 +1,182 @@
+@import 'include-media';
+
+
+.main {
+  z-index: 2500;
+  background-color: #000;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .left {
+    width: 40%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+    display: flex;
+
+    .centered {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+
+      .logo {
+        border-bottom: 1px solid #474747;
+        align-items: center;
+        margin-bottom: 35px;
+        padding-bottom: 20px;
+        padding-left: 45px;
+        padding-right: 45px;
+        display: flex;
+
+        .image {
+          background-position: 0 0;
+          background-size: cover;
+        }
+
+        .supernormal {
+          color: #fff;
+          letter-spacing: 5px;
+          flex-direction: column;
+          margin-left: 12px;
+          font-family: Poppins, sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 45px;
+          display: flex;
+        }
+      }
+
+      .harvesting {
+        color: #fff;
+        letter-spacing: 4px;
+        font-family: Poppins, sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+      }
+
+      .description {
+        color: #777;
+        margin-top: 17px;
+        font-family: Poppins, sans-serif;
+      }
+
+      .connect > div button{
+        letter-spacing: 2px;
+        background-color: #4b2f01;
+        border: 1px solid #ffbf00;
+        border-radius: 20px;
+        margin-top: 48px;
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        transition: all .2s;
+      }
+    }
+  }
+
+
+  .right {
+    width: 60%;
+    height: 100vh;
+    background-image: url("/src/assets/images/bg.jpeg");
+    background-position: 100%;
+    background-size: cover;
+  }
+}
+
+.expertiseWrapper{
+  margin-top: 16rem;
+  width: 100%;
+  height: 61.5rem;
+  display: flex;
+
+
+  @include media('<desktop') {
+    display: none;
+  }
+
+  .expertiseColumn{
+    width: 33%;
+
+    gap: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1 ;
+    align-self: stretch;
+
+    .expertise {
+      margin-top: 9rem;
+      margin-bottom: 9rem !important;
+      align-self: center;
+    }
+
+    & > div{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & >:not(:last-child){
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &:nth-child(2){
+      margin: 0 1.5rem;
+    }
+
+    &:nth-child(3){
+      text-align: right;
+    }
+  }
+}
+
+
+.mainDescription{
+  margin-top: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include media('<desktop') {
+    margin-top: 4rem;
+  }
+
+  & > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  & > div:nth-child(2){
+    margin-top: 12rem;
+    text-align: right;
+
+    @include media('<desktop') {
+      margin-top: 4rem;
+    }
+  }
+
+  .whatWeDo {
+    margin-bottom: 4rem;
+    align-self: center;
+  }
+}
+
+
+.CTAbuttons{
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 16rem;
+}

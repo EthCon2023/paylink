@@ -1,0 +1,13 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 25px;
+}
+
+.wrapper > div {
+  width: 60%;
+  height: auto;
+}
